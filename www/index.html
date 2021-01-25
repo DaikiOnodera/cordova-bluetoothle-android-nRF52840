@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Android BLE demo</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="js/jquery.mobile-1.4.5.js"></script>
+    </head>
+    <body>
+        <div data-role="tabs" data-corners="false" id="tabs" style="width:100%;">
+                <div name="tabcontent" id="tab1">
+                    <select id="select_box">
+                        <option disabled selected value> -- select an device -- </option>
+                    </select>
+                    <button type="button" id="btn_rcv" style="width:100%;padding:10px;">Receive</button>
+                    <div id="rcv_content" style="width:100%;padding:10px;"></div>
+                    <button type="button" id="btn_snd" style="width:100%;padding:10px;">Send</button>
+                    <input type="text" id="snd_content" value="snd,msg,sample" style="width:100%;padding:10px;">
+                    <div id="status_write" style="width:100%;padding:10px;"></div>
+                </div>
+                <div name="tabcontent" id="tab2" style="width:100%;">
+                    <div id="scan-header">
+                        <div id="start-scan" style="text-align:right;padding-right:10px;padding-top:10px;">Scan</div>
+                        <div id="stop-scan" style="text-align:right;padding-right:10px;padding-top:10px;display:none;">Stop Scanning</div>
+                        <div style="padding:20px;font-size:2em;font-weight:bold;">Scan Result</div>
+                    </div>
+                    <div name="scan-result" id="devices" style="margin:0 10px;">
+                    </div>
+                    <div id="services"></div>
+                    <div id="output"></div>
+                </div>
+
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false" style="position:fixed;">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a class="ui-btn-active" href="#tab1" data-icon="home">送受信</a></li>
+                        <li><a href="#tab2" data-icon="gear">設定</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

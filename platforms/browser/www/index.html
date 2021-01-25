@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>jQuery Hello World</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="js/jquery.mobile-1.4.5.js"></script>
+        <style>
+            .ui-tabs{
+                padding:0em;
+            }
+            .h1{
+                margin-top:0em;
+                margin-bottom:0em;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="tabs" data-corners="false" style="width:100%;">
+                <div id="tab1">
+                    this is tab1.
+                </div>
+                <div id="tab2" style="width:100%;">
+                    <div style="background-color:#659EC7;width:100%;color:#FFFFFF;">
+                        <div id="start-scan" style="text-align:right;padding-right:10px;padding-top:10px;">Scan</div>
+                        <div id="stop-scan" style="text-align:right;padding-right:10px;padding-top:10px;display:none;">Stop Scanning</div>
+                        <div><h1 style="padding:20px;">Scan Result</h1></div>
+                    </div>
+                    <div id="devices">
+                        This is ...
+                    </div>
+                    <div id="services"></div>
+                    <div id="output"></div>
+                </div>
+
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#tab2" data-icon="home">送受信</a></li>
+                        <li><a href="#tab1" data-icon="gear">設定</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

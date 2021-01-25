@@ -1,0 +1,42 @@
+body{
+    font-family: serif;
+}
+
+#scan-header{
+    background-color: #00A9CD;
+    width:100%;
+    color:#FFFFFF;
+}
+
+#wrapperDevice{
+    padding: 10px;
+    border-bottom: 0.5px solid #C0C0C0;
+    overflow: hidden;
+}
+.buttonConnect{
+    font-size: 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+    float: right;
+    border-radius: 12px;
+    outline: none;
+}
+.nodisplay{
+    display:none;
+}
+.devicename{
+    font-size: 16px;
+    font-weight: bold;
+    padding 3px 0;
+}
+.address{
+    font-size = "12px";
+}
+.ui-tabs{
+    padding:0;
+}
+.ui-focus{
+	-webkit-box-shadow: 0 0 0;
+	-moz-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+}
